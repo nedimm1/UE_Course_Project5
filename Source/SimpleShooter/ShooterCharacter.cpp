@@ -37,6 +37,7 @@ void AShooterCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 	PlayerInputComponent->BindAction(TEXT("Jump"), EInputEvent::IE_Pressed, this, &ACharacter::Jump);
 
 
+
 }
 
 void AShooterCharacter::MoveForward(float AxisValue) 
@@ -48,7 +49,6 @@ void AShooterCharacter::MoveRight(float AxisValue)
 {
 	AddMovementInput(GetActorRightVector() * AxisValue);
 }
-
 
 
 
